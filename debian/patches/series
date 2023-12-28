@@ -9,6 +9,7 @@ fixes/widevine-revision.patch
 fixes/widevine-locations.patch
 fixes/connection-message.patch
 fixes/0001-Add-utility-for-std-exchange.patch
+fixes/0001-Fix-no-member-named-tie-in-namespace-std.patch
 
 upstream/mojo.patch
 upstream/libxml.patch
@@ -42,6 +43,7 @@ system/clang-format.patch
 system/opus.patch
 system/eu-strip.patch
 system/rapidjson.patch
+system/0001-Fix-ValueError-invalid-mode-rU.patch
 
 bullseye/nomerge.patch
 bullseye/clang11.patch

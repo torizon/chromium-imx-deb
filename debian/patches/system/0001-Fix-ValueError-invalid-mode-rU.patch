@@ -1,0 +1,41 @@
+From b0077de1dc7b2869903beead50bc5086dbc83412 Mon Sep 17 00:00:00 2001
+From: Leonardo Held <leonardo.held@toradex.com>
+Date: Thu, 28 Dec 2023 10:47:15 -0800
+Subject: [PATCH] Fix ValueError: invalid mode: 'rU'
+
+Upstream fix message:
+
+In Python 3.11, 'U' ("universal newline") is no longer accepted in
+the file mode, having been deprecated in Python 3.3. The "universal
+newline" is used by default when a file is open in text mode.
+
+This commit removes the 'U' from the two (non-third-party) places
+it is used.
+
+From 0991fc6.
+
+There's no easy way to backport fixes with Debian builds without
+maintaining a fork. Let's try to keep the patches and if it becomes
+too unmanagable we fork chromium.
+
+Signed-off-by: Leonardo Held <leonardo.held@toradex.com>
+---
+ tools/grit/grit/util.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tools/grit/grit/util.py b/tools/grit/grit/util.py
+index 98433d154c..98e770b853 100644
+--- a/tools/grit/grit/util.py
++++ b/tools/grit/grit/util.py
+@@ -209,7 +209,7 @@ def ReadFile(filename, encoding):
+     mode = 'rb'
+     encoding = None
+   else:
+-    mode = 'rU'
++    mode = 'r'
+ 
+   with io.open(filename, mode, encoding=encoding) as f:
+     return f.read()
+-- 
+2.30.2
+

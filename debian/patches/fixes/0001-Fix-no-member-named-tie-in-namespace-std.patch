@@ -1,0 +1,27 @@
+From 9fa5991f95cf2f45bc4108d9f10e55fc0d7a6190 Mon Sep 17 00:00:00 2001
+From: Leonardo Held <leonardo.held@toradex.com>
+Date: Thu, 28 Dec 2023 13:22:05 -0800
+Subject: [PATCH] Fix no member named 'tie' in namespace 'std'
+
+Similar to f9968f05c708b31eb1f02590c48059131f97e5d0
+
+Signed-off-by: Leonardo Held <leonardo.held@toradex.com>
+---
+ net/base/address_list.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/net/base/address_list.h b/net/base/address_list.h
+index 029af1aded..a93093e41f 100644
+--- a/net/base/address_list.h
++++ b/net/base/address_list.h
+@@ -8,6 +8,7 @@
+ #include <stdint.h>
+ 
+ #include <string>
++#include <tuple>
+ #include <utility>
+ #include <vector>
+ 
+-- 
+2.30.2
+
