@@ -8,6 +8,7 @@ fixes/clang-and-gcc11.patch
 fixes/widevine-revision.patch
 fixes/widevine-locations.patch
 fixes/connection-message.patch
+fixes/0001-Add-utility-for-std-exchange.patch
 
 upstream/mojo.patch
 upstream/libxml.patch

@@ -1,0 +1,25 @@
+From f9968f05c708b31eb1f02590c48059131f97e5d0 Mon Sep 17 00:00:00 2001
+From: Leonardo Held <leonardo.held@toradex.com>
+Date: Thu, 28 Dec 2023 09:03:24 -0800
+Subject: [PATCH] Add utility for std::exchange
+
+Signed-off-by: Leonardo Held <leonardo.held@toradex.com>
+---
+ base/third_party/symbolize/symbolize.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/base/third_party/symbolize/symbolize.h b/base/third_party/symbolize/symbolize.h
+index 99029a968d..278078f607 100644
+--- a/base/third_party/symbolize/symbolize.h
++++ b/base/third_party/symbolize/symbolize.h
+@@ -61,6 +61,7 @@
+ #ifdef HAVE_SYMBOLIZE
+ 
+ #include <algorithm>
++#include <utility>
+ 
+ #if defined(__ELF__)  // defined by gcc
+ #if defined(__OpenBSD__)
+-- 
+2.30.2
+
