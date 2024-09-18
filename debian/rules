@@ -104,6 +104,22 @@ defines+=use_gio=true \
          ffmpeg_branding=\"Chrome\" \
          disable_fieldtrial_testing_config=true \
 
+defines+=use_ozone=true \
+		 ozone_platform_wayland=true \
+		 ozone_auto_platforms=false \
+		 ozone_platform_headless=false \
+		 ozone_platform_x11=false \
+		 use_xkbcommon=true \
+		 use_system_libwayland=true \
+		 use_system_libdrm=true \
+		 use_vaapi=true \
+         use_system_wayland_scanner=true \
+		 use_imxgpu=true
+
+ifeq (arm64,$(DEB_HOST_ARCH))
+defines+=use_system_minigbm=true use_wayland_gbm=true
+endif
+
 # handle parallel build options
 njobs=1
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
