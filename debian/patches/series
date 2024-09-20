@@ -141,3 +141,37 @@ ppc64le/third_party/0002-Highway-disable-128-bit-vsx.patch
 
 # Ungoogled Chromium
 ungoogled/core/ungoogled-chromium/disable-web-environment-integrity.patch
+
+imx/0001-Fixed-chromium-flicker-with-g2d-renderer.patch
+imx/0002-chromium-met-EGL-API-GetProcAddress-failures.patch
+imx/0003-Disable-dri-for-imx-gpu.patch
+imx/0004-Fix-chromium-build-failure.patch
+imx/0005-Revert-ui-gbm_wrapper-Ensure-to-create-BOs-with-impo.patch
+imx/0006-Fixed-chromium-crash-after-upgrading.patch
+imx/0007-ToTLinux-Fix-some-narrowing-errors.patch
+imx/0008-six-Update-vendored-copy-of-six-to-1.16.0.patch
+imx/0009-Update-LegacyStatsCollector-to-conform-with.patch
+imx/0010-Replace-imp.load_source-with-importlib-equivalent.patch
+imx/0011-MGS-7765-Blacklist-MSAA-for-GPU-Raster-on-Vivante-GP.patch
+imx/0012-LF-12406-Fixed-webgl-test-fail-for-GL_MAX_SAMPLES-ch.patch
+
+v4l2/0101-V4L2VDA-Switch-to-use-VDA-instead-of-direct-VideoDec.patch
+v4l2/0102-GenericV4L2Device-Correct-v4l2-decoder-device-path.patch
+v4l2/0103-V4L2VDA-Add-macro-use_linux_v4l2.patch
+v4l2/0104-V4L2VDA-Create-single-multi-plane-queues.patch
+v4l2/0105-V4L2Buffer-Allocate-correct-v4l2-buffers-for-queues.patch
+v4l2/0106-V4L2VDA-Create-videoframe-according-to-v4l2buffer.patch
+v4l2/0107-V4L2VDA-Add-function-IsMultiQueue-for-S_FMT-and-G_FM.patch
+v4l2/0108-V4L2VDA-Use-correct-size-to-allocate-CAPTURE-buffer.patch
+v4l2/0109-V4L2VDA-Use-correct-plane-size-and-bytesused.patch
+v4l2/0110-V4L2VDA-Add-hevc-format-support.patch
+v4l2/0111-V4L2VDA-fix-vp9-crash-caused-by-DequeueResolutionCha.patch
+v4l2/0112-V4L2VDA-Add-fps-in-SkiaOutputSurfaceImplOnGpu-by-VLO.patch
+v4l2/0113-V4L2VDA-Comment-some-unused-ioctl.patch
+v4l2/0114-V4L2VDA-Set-OUTPUT-format-with-parsed-resolution-for.patch
+v4l2/0115-V4L2VDA-Add-V4L2_PIX_FMT_NV12M_8L128-format-for-amph.patch
+v4l2/0116-V4L2VDA-Support-tile-to-linear-transform-for-amphion.patch
+v4l2/0117-V4L2VDA-Enlarge-input-buffer-count-to-16.patch
+v4l2/0118-V4L2VDA-Use-dlopen-to-dynamically-use-g2d-api.patch
+v4l2/0119-V4L2VDA-Add-back-legacy-VideoDecoderType-kVda.patch
+v4l2/0120-V4L2Buffer-Add-support-for-imx95.patch
