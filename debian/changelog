@@ -1,3 +1,14 @@
+chromium (101.0.4951.54-2+toradex2) bookworm; urgency=medium
+
+  [ Leonardo Held ]
+  * Add patch to fix std::exchange indefinition
+  * patches: system: update openjpeg patch to match stable's current version
+  * Add system patches
+  * Add imx-specific patches
+  * Don't ship libGLES/EGL from Chromium
+
+ -- Leonardo Held <leonardo.held@toradex.com>  Fri, 20 Sep 2024 11:11:52 -0300
+
 chromium (101.0.4951.54-1) unstable; urgency=low
 
   * Depend on sse3-support to ensure that chromium is only installed on
