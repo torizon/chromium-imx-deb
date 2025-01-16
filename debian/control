@@ -1,12 +1,7 @@
 Source: chromium
 Section: web
 Priority: optional
-Maintainer: Debian Chromium Team <chromium@packages.debian.org>
-Uploaders:
- Andres Salomon <dilinger@debian.org>,
- Timothy Pearson <tpearson@raptorengineering.com>,
-Vcs-Git: https://salsa.debian.org/chromium-team/chromium.git
-Vcs-Browser: https://salsa.debian.org/chromium-team/chromium
+Maintainer: Toradex Packaging Team <debian-pkg-team@toradex.com>
 Homepage: http://www.chromium.org/Home
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
