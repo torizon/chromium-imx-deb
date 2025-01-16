@@ -1,3 +1,14 @@
+chromium (117.0.5938.132-2+toradex1) bookworm; urgency=high
+
+  * Update maintainer info in control
+  * Drop gcc13-with-clang14.patch
+  * Drop 0008-six-Update-vendored-copy-of-six-to-1.16.0.patch
+  * Enable use_linux_v4l2_only
+  * Add imx-specific patches from meta-imx scarthgap-6.6.36-2.1.0
+  * Import 117.0.5938.132 packaging from Salsa
+
+ -- Leonardo Held <leonardo.held@toradex.com>  Wed, 15 Jan 2025 08:28:46 -0300
+
 chromium (117.0.5938.132-2) unstable; urgency=high
 
   * d/patches/fixes/v8-compressed-ptrs.patch: fix another armhf FTBFS.
