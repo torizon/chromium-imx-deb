@@ -61,7 +61,7 @@ ifeq (amd64,$(DEB_HOST_ARCH))
 defines+=host_cpu=\"x64\" use_vaapi=true
 endif
 ifeq (arm64,$(DEB_HOST_ARCH))
-defines+=host_cpu=\"arm64\" use_v4l2_codec=true use_vaapi=false
+defines+=host_cpu=\"arm64\" use_v4l2_codec=true use_linux_v4l2_only=true use_vaapi=false
 endif
 ifeq (armhf,$(DEB_HOST_ARCH))
 defines+=host_cpu=\"arm\" use_v4l2_codec=true use_vaapi=false arm_use_neon=true
@@ -86,6 +86,7 @@ defines+=is_debug=false \
          build_angle_perftests=false \
          treat_warnings_as_errors=false \
          use_qt=false \
+         use_gtk=false \
          is_cfi=false \
          use_thin_lto=false \
          chrome_pgo_phase=0 \
