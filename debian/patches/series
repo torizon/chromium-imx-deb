@@ -150,7 +150,6 @@ imx/0004-Fix-chromium-build-failure.patch
 imx/0005-Revert-ui-gbm_wrapper-Ensure-to-create-BOs-with-impo.patch
 imx/0006-Fixed-chromium-crash-after-upgrading.patch
 imx/0007-ToTLinux-Fix-some-narrowing-errors.patch
-imx/0008-six-Update-vendored-copy-of-six-to-1.16.0.patch
 imx/0009-Update-LegacyStatsCollector-to-conform-with.patch
 imx/0010-Replace-imp.load_source-with-importlib-equivalent.patch
 imx/0011-MGS-7765-Blacklist-MSAA-for-GPU-Raster-on-Vivante-GP.patch
